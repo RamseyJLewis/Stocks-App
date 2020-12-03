@@ -5,7 +5,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'react-crud.clj7qm4xqlwn.us-east-1.rds.amazonaws.com',
     database: 'stockapp',
-    password: 'postgres',
+    password: 'testpass',
     port: '5432'
 })
 const getAllusers = (request, response) => {

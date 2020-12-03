@@ -5,7 +5,7 @@ const app = express();
 const db = require("./queries");
 const { request, response } = require('express');
 const { getAllusers } = require('./queries');
-const port = 3002;
+const port = 3030;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,5 +18,5 @@ app.get('/', (request, response) => {
 app.get('/users', getAllusers);
 
 app.listen(port, () => {
-console.log(`App running on port: $(port)`)
+console.log(`App running on port: ${port}`)
 });

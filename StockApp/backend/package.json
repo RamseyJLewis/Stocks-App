@@ -1,5 +1,5 @@
 {
-    "name": "StockApp",
+    "name": "stockapp",
     "main": "index.js",
     "dependencies": {
         "cors": "^2.8.5",

@@ -10,13 +10,26 @@
 * As a teracher I want to use this to display different companies in our class account and show why threre stock values are what they are and how that can chnage month by month
 
 # PAGES ---
-* [] Create a wireframe
-* [] Craete a database
-* [] Create  React Applocation
-* [] Connect Database and React Page
+* [✓] Create a wireframe
+* [✓] Craete a database
+* [✓] Create  React Applocation# 
+* [✓] Connect Database and React Page
 * [] Create a Login page
+ * [] Connect Databased and Login Page to have accounts
 * [] Create a Landing Page
+    * [] Connect API and get infotmation showing up in screen
+    * [] be able to edit database from this screen just the raw infomation 
+    * [] Craete a nav bar 
+    * [] Create basic shapes of page -- box for stock chart -- box for stock list -- news area at botom -- top movers section at the top 
+    * [] stock chart shold have buttons of 1day 1 month 3 months 1 year 5 years
+    * [] based on frist stock in database create a line chart of the 5 years of history of that stock
+    * [] based on frist stock in database create a news section using the stocks key word and put it in the news area
+    * [] based on top movers display a moving screen and if the top mover is lower than it was at open display percent in red if its higher or even display in green
 * [] Create a Potfolio Page
+* [] de able to see information of each stock and 
+* [] 
+* [] 
+* [] 
 * [] Create a News Page 
 
 # LOGIN
