@@ -34,21 +34,27 @@ import { iex } from '../config/iex';
 //<div> {this.state.data[0].quote.symbol}</div>
 
         populateRows (){  
-            console.log(this.state.data[0].quote.symbol)
-               
-            this.state.data.map( quote => {
-                //console.log(quote);
+            console.log(this.state.data[0].quote.symbol, 'data at symbol')
+            console.log(this.state.data[0].quote, 'data at quote')
+            console.log(this.state.data[0], 'data at zero')                                    
+            console.log(this.state.data, 'data')     
+            console.log(this.state.data.length,'data length'); 
+
+            let ticker =  this.state.data[0].quote.symbol
+            let chartLow = this.state.data[0].chart[0].low   
                 return(
-                    <div>                    
-                        <div>{quote.symbol}</div>
-                        <div>{quote.chart[0].low}</div>
-                        <div>{quote.chart.high }</div>
-                        <div>{quote.quote.latestTime }</div>
+                    <div>   
+                             <div> {ticker}</div>   
+                             <div> {chartLow}</div>  
+                        {/* <div>{data.quote.symbol}</div>
+                        <div>{data.quote.chart[0].low}</div>
+                        <div>{data.quote.chart.high }</div>
+                        <div>{data.quote.latestTime }</div> */}
                     </div>
                     
                 )
-            })
-        }
+            }
+        
         componentDidUpdate(){
             console.log('update');
         }
