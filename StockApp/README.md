@@ -1,5 +1,8 @@
 # Stocks App: Create an app where users can anaalize and chart and log stocks to make more eductaed decisicons
 
+# Username ramseyjlewis
+# Password password123
+
 ## Goals: 
 * A user can make an acccount login into that account and add stocks to there portfolio and track and store & delete at will them.
 

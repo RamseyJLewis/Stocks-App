@@ -8,6 +8,7 @@ const pool = new Pool({
     password: 'testpass',
     port: '5432'
 })
+///psql -h react-crud.clj7qm4xqlwn.us-east-1.rds.amazonaws.com -p 5432 -u postgres
 const getAllusers = (request, response) => {
     pool.query('SELECT * FROM users', (error,result) =>{
         if(error){
@@ -15,6 +16,9 @@ const getAllusers = (request, response) => {
         }
         response.status(200).json(result.rows)
     })
+}
+const addUsers = (request, response) => {
+
 }
 module.exports = {
     getAllusers
