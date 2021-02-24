@@ -17,16 +17,14 @@ class LandingPage extends Component {
         return (
             <div>
                 <table className='table mt-5'>
-                    <thead>
                         <tr>
                             <td>symbol</td>
                             <td>low</td>
                             <td>high</td>
                             <td>latestTime</td>
                         </tr>
-                    </thead>
-                    <StockRow symbols={this.state.symbols} />
                 </table>
+                <StockRow symbols={this.state.symbols} />
             </div>
         )
     }
