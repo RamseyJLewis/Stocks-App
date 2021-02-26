@@ -1,13 +1,15 @@
+
 import React, { Component } from 'react';
 import StockRow from '../StockRow/StockRow'
 import './LandingPage.css';
 
+let inputTicker = ['QQQ']
 
 class LandingPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            symbols: ['QQQ'],
+            symbols: inputTicker,
             data: {}
         }
     }
@@ -15,15 +17,8 @@ class LandingPage extends Component {
     render() {
 
         return (
-            <div>
-                <table className='table mt-5'>
-                        <tr>
-                            <td>symbol</td>
-                            <td>low</td>
-                            <td>high</td>
-                            <td>latestTime</td>
-                        </tr>
-                </table>
+            <div class="container">
+                    
                 <StockRow symbols={this.state.symbols} />
             </div>
         )
