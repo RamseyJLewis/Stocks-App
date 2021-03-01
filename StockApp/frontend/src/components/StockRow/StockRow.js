@@ -20,32 +20,29 @@ class StockRow extends Component {
             fetch(url)
                 .then((response) => response.json())
                 .then((info) => {
-                    //console.log(info)
                     const newData = [...this.state.data, info]
-                    //console.log(newData)
                     this.setState({
                         data: newData
                     })
                 })
-            //console.log(this.state)
-
         })
     }
-    //<div> {this.state.data[0].quote.symbol}</div>
-
+    //function to reuest data from API
     populateRows() {
+        
         console.log(this.state.data[0].quote.symbol, 'data at symbol')
         console.log(this.state.data[0].quote, 'data at quote')
         console.log(this.state.data[0], 'data at zero')
         console.log(this.state.data, 'data')
         console.log(this.state.data.length, 'data length');
-
+        // Setting names to data being requested from the API
         let ticker = this.state.data[0].quote.symbol
         let chartLow = this.state.data[0].chart[0].low
         let chartHigh = this.state.data[0].chart[0].high
         let latestPrice = this.state.data[0].quote.latestPrice
 
         return (
+            //catagory of data is next to {data type}
             <div class="container">
                     <div class="row"> Ticker: {ticker}</div>
                     <div>  Today's Low: {chartLow}</div>
@@ -60,7 +57,8 @@ class StockRow extends Component {
         console.log('update');
     }
     render() {
-
+        //on a click of a button run function get data
+        //if there is data show it on screen but if there is no data from what is being requsted display 'no data'
         return (
             <div>
                 <button onClick={this.getData}> Get Data </button>
