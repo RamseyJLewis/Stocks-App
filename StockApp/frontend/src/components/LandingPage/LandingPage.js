@@ -1,9 +1,11 @@
 
 import React, { Component } from 'react';
 import StockRow from '../StockRow/StockRow'
+import TickerInput from '../TickerInput/TickerInput'
 import './LandingPage.css';
 
 let inputTicker = ['QQQ']
+
 
 class LandingPage extends Component {
     constructor(props) {
@@ -18,6 +20,7 @@ class LandingPage extends Component {
 
         return (
             <div class="container">
+                <TickerInput />
                     
                 <StockRow symbols={this.state.symbols} />
             </div>
