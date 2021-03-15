@@ -30,5 +30,6 @@ class TickerInput extends React.Component {
       );
     }
   }
+  //test
   
   export default TickerInput
